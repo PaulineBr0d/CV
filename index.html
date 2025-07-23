@@ -8,10 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head> 
 <body> 
-  <header><h1 class="inline">Pauline Briaud</h1> 
-      <h3 class="inline">Développeuse en réconversion</h3> 
-        <a class="inline" href="https://www.linkedin.com/in/pauline-briaud" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <img src="images/photo.jpg" alt="Photo" class="profile-pic">
+  <header>
+     <div class="banner-text">
+    <h1>Pauline Briaud</h1>
+    <h3>Développeuse Full-Stack</h3>
+  </div>
+  <div class="banner-icons">
+    <a href="https://www.linkedin.com/in/pauline-briaud" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <img src="images/photo.jpg" alt="Photo" class="profile-pic">
+  </div>
 </header>
   <main> 
     <h3 id="welcome-section">Après 10 ans d'expérience en 
@@ -45,7 +52,7 @@ janvier sur Lyon.</h3>
     </div>
   </div>
   
-  <div class="entry" style="top: 50%; left: 25%;">
+  <div class="entry" style="top: 55%; left: 25%;">
        <div class="icon"></div>
     <div class="label-entry">Jedha BootCamp</div>
 
@@ -65,12 +72,15 @@ janvier sur Lyon.</h3>
  
     <h3 class="label">Projets académiques ou personnels</h3> 
     <section id="projects"> 
-        <div class="block"># Projet de fin de formation du Jedha <a href="https://github.com/PaulineBr0d/project_DataJobMix_jedha" class="highlight-link">Data Job Mix</a> : scraping des offres, clustering, dashboard avec visualisations et outils de recherche</div>   
-        <div class="block"># Projets pour certification Front End Libraries sur freeCodeCamp 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/responsive-web-design' class='highlight-link'>Responsive Web Design</a> (HTML | CSS)</p> 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/javascript-algorithms-and-data-structures-v8' class='highlight-link'>JavaScript Algorithms and Data Structures</a></p> 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/front-end-development-libraries' class='highlight-link'>Front End Development Libraries</a> (React.js)</p></div></div>
-        <div class="block"># Projet <a href="" class="highlight-link">page CV</a> sur Github</div>   
+        <!--<div class="block"># Projet de fin de formation du Jedha <a href="https://github.com/PaulineBr0d/project_DataJobMix_jedha" class="highlight-link">Data Job Mix</a> : scraping des offres, clustering, dashboard avec visualisations et outils de recherche</div>-->   
+         <div class="block"><i class="fa-brands fa-github"></i> Projet <a href="" class="highlight-link transition-all">page CV</a> sur Github</div>
+
+        <div class="block"><i class="fa-brands fa-free-code-camp"></i> Projets pour certification Front End Libraries sur freeCodeCamp 
+            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/responsive-web-design' class='highlight-link transition-all'>Responsive Web Design</a> (HTML | CSS)</p> 
+            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/javascript-algorithms-and-data-structures-v8' class='highlight-link transition-all'>JavaScript Algorithms and Data Structures</a></p> 
+            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/front-end-development-libraries' class='highlight-link transition-all'>Front End Development Libraries</a> (React.js)</p></div>
+  
+       
   </section> 
        <h3 class="label reveal-pro">Expériences professionnelles</h3> 
     <section class="map-container" id="pro-section">
@@ -94,7 +104,7 @@ janvier sur Lyon.</h3>
         <p># Amélioration de rapports et suivi des paramétrages de l’EPM (Tagetik)</p></div>
   </div>
   
-  <div class="entry" style="top: 35%; left: 40%;">
+  <div class="entry" style="top: 40%; left: 40%;">
        <div class="icon"></div>
     <div class="label-entry">Responsable comptable</div>
 
@@ -115,61 +125,63 @@ janvier sur Lyon.</h3>
         </div>
   </div>
 </section> 
-    <h3 class="label">Compétences</h3> 
-   <section id="hard-skills"> 
-     <div class="block"> 
-       <h4>Langages de programmation</h4> 
-       <p>HTML | CSS | JavaScript</p> 
-    <p>PHP | Java (en cours d'apprentissage)</p> 
-       <p>Python et ses librairies - Pandas, Scikit-learn, Streamlit, etc.</p> 
-</div> 
-     <div class="block"> 
-       <h4>Autres outils</h4> 
+    <h3 id="hard-skills" class="label reveal-hard">Compétences</h3> 
+   <section class="hard-skills-container"> 
+    <div class="block hard">
+  <div class="hard-title ">
+    <img class="hard-icon" src="images/app.png" alt="langage">
+    <h4>Langages de programmation</h4>
+  </div>
+  <div class="hard-content transition-all">
+    <p>Front-end : HTML | CSS | JavaScript</p>
+    <p>Back-end (en cours d'apprentissage) : PHP | Java </p>
+    <p>Data : Python - Pandas, Scikit-learn, Streamlit, etc.</p>
+  </div>
+</div>
+     <div class="block hard"> 
+       <div class="hard-title"><img class="hard-icon" src="images/bag.png" alt="other"><h4>Autres outils</h4></div>
+       <div class="hard-content transition-all">
        <p> SQL, bases de la stack MERN</p> 
-       <p> Autres notions en Bash, Docker, Git</p> 
+       <p> Autres notions en Bash, Docker, Git</p> </div> 
 </div> 
-     <div class="block"> 
-       <h4>Langues</h4> 
-       <p>Anglais technique</p> 
+     <div class="block hard">
+       <div class="hard-title"><img class="hard-icon" src="images/pole.png" alt="langue"> 
+       <h4>Langues</h4> </div> 
+         <div class="hard-content transition-all">
+               <p>Anglais technique</p> </div> 
         </div> 
   </section>  
     <h3 id="soft-skills" class="label reveal-soft">Soft Skills</h3> 
     <section class="soft-skills-container">
-  <div class="badge" data-info="">
-    <img class="badge-icon soft-trigger" src="images/apprentissage.png" alt="Apprentissage">
-    <div class="badge-title">Apprentissage</div>
-    <div class="soft-info-bubble">Certifications en JavaScript et Python</div>
-  </div>
-
-  <div class="badge" data-info="">
-    <img class="badge-icon soft-trigger" src="images/apprentissage.png" alt="Initiative">
-    <div class="badge-title">Esprit d'initiative</div>
-    <div class="soft-info-bubble">Amélioration et automatisation de process</div>
-  </div>
-
-  <div class="badge" data-info="">
-    <img class="badge-icon soft-trigger" src="images/equipe.png" alt="Esprit d'équipe">
-    <div class="badge-title">Esprit d'équipe</div>
-    <div class="soft-info-bubble">Collaboration avec des équipes transverses</div>
-  </div>
-
-  <div class="badge" data-info="">
-    <img class="badge-icon soft-trigger" src="images/rigueur.png" alt="Rigueur">
+  <div class="badge transition-all" data-info="">
+    <img class="badge-icon" src="images/16952.jpg" alt="Rigueur">
     <div class="badge-title">Rigueur</div>
     <div class="soft-info-bubble">Respect des deadlines et procédures internes</div>
   </div>
+    <div class="badge transition-all" data-info="">
+    <img class="badge-icon" src="images/19198840.jpg" alt="Initiative">
+    <div class="badge-title">Esprit d'initiative</div>
+    <div class="soft-info-bubble">Amélioration et automatisation de process</div>
+  </div>
+    <div class="badge transition-all" data-info="">
+    <img class="badge-icon" src="images/apprentissage.png" alt="Apprentissage">
+    <div class="badge-title">Apprentissage</div>
+    <div class="soft-info-bubble">Certifications en JavaScript et Python</div>
+  </div>
+    <div class="badge transition-all" data-info="">
+    <img class="badge-icon" src="images/4188513.jpg" alt="Esprit d'équipe">
+    <div class="badge-title">Esprit d'équipe</div>
+    <div class="soft-info-bubble">Collaboration avec des équipes transverses</div>
+  </div>
 </section>
-     <h3 id="other" class="label reveal-other">Autres diplômes</h3> 
+     <h3 id="other" class="label">Autres diplômes</h3> 
   <section class="other-container"> 
-    <div class="badge"> 
-         <img class="badge-icon soft-trigger" src="images/silence.jpg" alt="">
-        <div class="soft-info-bubble">BTS Comptabilité Gestion | 2014</div></div>
-      <div class="badge"> 
-        <img class="badge-icon soft-trigger" src="images/Ramassage insectes interdit.png" alt="">
-        <div class="soft-info-bubble">Titre comptable-assistant | 2010</div></div> 
-     <div class="badge">
-        <img class="badge-icon soft-trigger" src="images/080-graffiti-200px.jpg" alt=""> 
-        <div class="soft-info-bubble">Licence en sociologie | 2004</div></div> 
+    <div class="block other-block"> 
+         <img class="other-icon" src="images/Parc_naturel_régional_de_la_Chartreuse.png" alt=""><h4>BTS Comptabilité Gestion | 2014</h4></div>
+      <div class="block other-block"> 
+        <img class="other-icon" src="images/Parc_naturel_régional_du_Vercors.svg" alt=""><h4>Titre comptable-assistant | 2010</h4></div> 
+     <div class="block other-block">
+        <img class="other-icon" src="images/Parc_naturel_régional_du_Queyras.svg" alt=""><h4>Licence en sociologie | 2004</h4></div> 
   </section> 
 
     </main> 
@@ -179,7 +191,7 @@ janvier sur Lyon.</h3>
     <a href="#pro-section">Expériences</a> 
     <a href="#hard-skills">Compétences</a> 
     <a href="#soft-skills">Soft Skills</a> 
-    <a href="#other">Autres diplômes</a>   
+    <a href="#other">Autres diplômes</a> 
   </nav> 
   <script src="script.js"></script>
 </body> 

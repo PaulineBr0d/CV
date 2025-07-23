@@ -1,0 +1,157 @@
+/* Reset général */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eaeaea;
+    color: #4a4a4a;
+}
+
+html { 
+    scroll-padding-top: 180px; 
+}
+
+/* En-tête */
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 140px;
+    background-color: #598393;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.banner-text {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.banner-icons {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    max-width: 30%;
+    min-width: 200px;
+    justify-content: flex-end;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.fa-linkedin{
+    color: #333;
+
+}
+.fa-linkedin:hover {
+    color: #004182;
+    transform: scale(1.2);
+}
+
+/* Image de profil */
+.profile-pic {
+  width:100px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #333;
+  align-items: baseline;
+  object-fit: cover;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    left: 0;
+    top: 140px;
+    width: 200px;
+    height: calc(100% - 140px);
+    background-color: #AEC3B0;
+    padding: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: #6eb8ff;
+}
+
+/* Contenu principal */
+main {
+    margin: 20px auto 0 auto ;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.elevation-container {
+    position: relative;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.elevation-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/fond_deniv.png'); 
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3; 
+}
+
+.map-container {
+    position: relative;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.map-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('images/fond-carte.jpeg'); 
+    background-size: cover;
+    background-position: top;
+    opacity: 0.3; 
+    z-index: 0;
+}
+
+.soft-skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  background: #f4f5ee;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  position: relative;
+}
