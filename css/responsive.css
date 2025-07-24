@@ -1,0 +1,76 @@
+@import url('variables.css');
+
+@media screen and (max-width: 768px) {
+ 
+  header {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .banner-icons {
+  display: block;
+  margin: 0 20px;
+  }
+
+  .banner-text,  p#welcome-section {
+    font-size: 1rem;
+  }
+
+  .img-container,
+  nav {
+    display: none;
+  }
+
+  main {
+    width:90%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  section {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .block {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  #entry1, #entry2,  #entry3, #entry4, #entry5, #entry6,  #entry7, #entry8   {
+    top: 0;
+    left: 0;
+  }
+
+  .elevation-container,
+  .map-container {
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    gap: 20px;
+    max-height: 350px;
+  }
+  
+  .entry {
+    position: relative;
+  }
+
+ .elevation-container .entry:last-child .info-bubble {
+    transform: none; 
+  } 
+
+  .entry .info-bubble {
+  position: absolute;
+  top:40px;
+  left:-40px;
+  transform: none;
+  max-width: 350px;
+  }
+
+}

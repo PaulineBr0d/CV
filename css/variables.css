@@ -1,0 +1,11 @@
+:root  {
+ --font-main: 'Montserrat', sans-serif;
+  --bg-main: #eaeaea;
+  --text-main: #4a4a4a;
+  --accent: #36a575;
+  --hover-accent: #004182;
+  --nav-bg: #AEC3B0;
+  --header-bg: #598393;
+  --block-bg: #f4f5ee;
+  --bubble-bg: white;
+}
