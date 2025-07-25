@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 @media screen and (max-width: 768px) {
- 
+  
   header {
     width: 100%;
     justify-content: center;
@@ -59,6 +59,7 @@
   
   .entry {
     position: relative;
+    width: 100%;
   }
 
  .elevation-container .entry:last-child .info-bubble {
@@ -70,7 +71,18 @@
   top:40px;
   left:-40px;
   transform: none;
-  max-width: 350px;
+    }
+  .label-entry, 
+  .info-bubble .subtitle, 
+  .info-bubble > p {
+    font-size: 12px;
   }
 
+  .label {
+    font-size:  16px;
+  }
+  .block, .soft-info-bubble{
+    font-size:  14px;
+  }
+ 
 }
