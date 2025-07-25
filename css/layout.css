@@ -82,7 +82,7 @@ p#welcome-section   {
     line-height: 1.5;
 }
 .block {
-    background: #f4f5ee;
+    background-color:  var(--block-bg);
     max-width: 700px;
     width: 100%;
     padding: 20px;
@@ -105,8 +105,7 @@ p#welcome-section   {
 .map-container {
     position: relative;
     height: 450px;
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    
 }
 .elevation-container::before,
 .map-container::before {
@@ -115,12 +114,14 @@ p#welcome-section   {
     inset: 0;
     background-size: cover;
     background-position: top;
-    opacity: 0.3;
     z-index: 0;
+    opacity:0.3;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 .elevation-container::before {
     background-image: url('../images/fond_deniv.png');
-}
+ }
 .map-container::before {
     background-image: url('../images/fond-carte.jpeg');
 }

@@ -59,7 +59,7 @@
 .icon {
   width: 35px;
   height: 35px;
-  background-color: white;
+  background-color: var(--bubble-bg);
   border-radius: 8px;
   border: 2px solid #333;
   transform: rotate(-5deg);
@@ -73,7 +73,7 @@
   position: absolute;
   top: 0;
   left: 100%;
-  background: white;
+  background-color: var(--bubble-bg);
   border: 2px solid #333;
   padding: 16px;
   border-radius: 10px;
@@ -109,7 +109,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 30px;
-  background: #f4f5ee;
+  background-color: var(--block-bg);
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -146,8 +146,8 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  background: white;
-  border: 3px solid #00B18A;
+  background-color: var(--bubble-bg);
+  border: 3px solid #36a575;
   padding: 14px;
   border-radius: 10px;
   font-size: 16px;
@@ -183,7 +183,7 @@
   margin-top: 10px;
   margin-left: 50px;
   padding-left: 15px;
-  border-left: 3px solid #36a575;
+  border-left: 3px solid var(--accent);
   }
 
 .hard-content p {
