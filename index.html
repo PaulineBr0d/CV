@@ -1,206 +1,229 @@
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <title>My online CV</title> 
-  <link rel="stylesheet" href="css/style.css" /> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head> 
-<body> 
-  <header>
-     <div class="banner-text">
-    <h1>Pauline Briaud</h1>
-    <h3>Développeuse Full-Stack</h3>
-  </div>
-  <div class="banner-icons">
-    <a href="https://www.linkedin.com/in/pauline-briaud" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-  <div class="img-container">
-    <img src="images/photo.jpg" alt="Photo" class="main-img">
-    <img src="images/character_modal_01-1160x773.jpg" alt="Junk Head" class="hover-img">
-  </div>
-  </div>
-</header>
-<div class="layout">
-   <nav id="navbar">
-    <ul class="nav-links" id="navLinks">
-    <li><a href="#learning-section">Formation</a> </li>
-    <li><a href="#projects">Projets</a> </li>
-    <li><a href="#pro-section">Expériences</a> </li>
-    <li><a href="#hard-skills">Compétences</a> </li>
-    <li><a href="#soft-skills">Soft Skills</a> </li>
-    <li><a href="#other">Autres diplômes</a> </li>
-    </ul>
-  </nav>
-  <main>
-    <p id="welcome-section">Après 10 ans d'expérience en 
-finance, informatique de gestion et outils de la Data,
-je souhaite me réorienter en tant que Développeuse.<br>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV en ligne</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="banner"></div>
+    <div class="profile-photo-container">
+      <img src="images/photo.jpg" alt="Photo de profil" class="profile-photo" />
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="cv-section">
+      <h3 class="section-title">A propos de moi</h3>
+      <p class="intro-text">
+        <a href="https://www.linkedin.com/in/pauline-briaud" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+       Avec plus de 10 ans d’expérience en finance, j’ai toujours utilisé les outils informatiques pour optimiser le traitement et l’analyse des données. Automatisation, extraction, formalisation : ces solutions ont été au cœur de mon travail et ont renforcé mon attrait pour la technologie.
+        <br>
+        <a href="https://github.com/PaulineBr0d" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        Aujourd'hui en me formant au développement, je souhaite concevoir des interfaces intuitives et efficaces.
 Je suis en recherche de <b>stage non 
-rémunéré</b> de 4 mois à partir de 
-janvier sur Lyon.</p> 
- <h3 class="label reveal-learning">Formation</h3> 
-<section class="elevation-container" id="learning-section">
- 
-  
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry1">
-       <div class="icon"></div>
-        <div class="label-entry">M2i</div>
-           <div class="info-bubble ">
-            <span class="subtitle">Concepteur développeur d’applications | 06/2025 - 06/2026</span>
-                <p># Préparation Titre Professionnel niveau Bac + 4</p>
-                <p># Objectif : concevoir et développer une application sécurisée et préparer son déploiement avec une démarche DevOps</p>
-                <p><strong># Stage en entreprise du 26/01/2026 au 01/06/2026</strong></p> 
+rémunéré</b> de 4 mois à partir de janvier sur Lyon dans le cadre de ma formation chez M2i.
+      </p>
+    </section>
+<section class="cv-section" id="learning-section">
+<h3 class="section-title reveal-pro" onclick="toggleAllInfoBubbles()">Formation</h3>  
+<div class="entry-group">
+  <div class="cv-entry"  onclick="toggleInfoBubble(this)">
+    <div class="entry-header">M2i</div>
+     <div class="entry-details">
+    <span class="tag">Concepteur développeur d’applications</span><span class="date"> 06/2025 - 06/2026</span>
+    <p># Préparation Titre Professionnel niveau Bac + 4</p>
+    <p># Objectif : concevoir et développer une application sécurisée et préparer son déploiement avec une démarche DevOps</p>
+    <p><strong>Stage en entreprise du 26/01/2026 au 01/06/2026</strong></p> 
+         </div>
         </div>
-  </div>
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry2">
-       <div class="icon"></div>
-     <div class="label-entry">freeCodeCamp</div>
-    
-    <div class="info-bubble"><span class='subtitle'>Plateforme web d'apprentissage | 09/2024 - 05/2025</span>
-        <p># Responsive Web Design (HTML | CSS)</p> 
-        <p># JavaScript Algorithms and Data Structures</p> 
-        <p># Front End Development Libraries (React.js)</p>
-    </div>
-  </div>
-  
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry3">
-       <div class="icon"></div>
-    <div class="label-entry">Jedha BootCamp</div>
-
-        <div class="info-bubble"><span class='subtitle'>Data Science & Engineering Full Stack | 03/2023 - 06/2023</span> 
-        <p># Data Management, Machine Learning et construction d'interfaces</p> </div>
-  </div>
-
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry4">
-       <div class="icon"></div>
-    <div class="label-entry">MIT</div>
-
-      <div class="info-bubble"> <span class="subtitle">Formation en ligne edX | 01/2023 - 03/2023</span>
-        <p># Introduction to Computer Science and Programming Using Python</p></div>
-  </div>
-
+     <div class="cv-entry"  onclick="toggleInfoBubble(this)">
+     <div class="entry-header">Jedha BootCamp</div>
+     <div class="entry-details">
+        <span class="tag">Data Science & Engineering Full Stack</span><span class="date">03/2023 - 06/2023</span>
+      <p>Data Management, Machine Learning et construction d'interfaces</p>    
+      </div>
+      </div></div>
+  <h4 class="sub-section-title"> <i class="fa fa-free-code-camp"></i>Formation autonome et Auto-apprentissage</h4>
+  <div class="entry-group">
+  <div class="cv-entry"  onclick="toggleInfoBubble(this)">
+     <div class="entry-header">freeCodeCamp</div>
+     <div class="entry-details">
+        <span class="tag">Plateforme web d'apprentissage</span><span class="date">09/2024 - 05/2025</span>
+      <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/responsive-web-design' class='highlight-link'>Responsive Web Design</a> (HTML | CSS)</p> 
+      <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/javascript-algorithms-and-data-structures-v8' class='highlight-link'>JavaScript Algorithms and Data Structures</a></p> 
+      <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/front-end-development-libraries' class='highlight-link'>Front End Development Libraries</a> (React.js)</p>
+     </div>
+     </div>
+  <div class="cv-entry"  onclick="toggleInfoBubble(this)">
+      <div class="entry-header">MIT</div>
+    <div class="entry-details">
+        <span class="tag">Formation en ligne edX</span><span class="date">01/2023 - 03/2023</span>
+      <p>Introduction to Computer Science and Programming Using Python</p> 
+       </div>
+       </div></div>
 </section>  
- 
-    <h3 class="label">Projets académiques ou personnels</h3> 
-    <section id="projects"> 
-        <!--<div class="block"># Projet de fin de formation du Jedha <a href="https://github.com/PaulineBr0d/project_DataJobMix_jedha" class="highlight-link">Data Job Mix</a> : scraping des offres, clustering, dashboard avec visualisations et outils de recherche</div>-->   
-         <div class="block"><i class="fa-brands fa-github"></i> Projet <a href="" class="highlight-link transition-all">page CV</a> sur Github</div>
 
-        <div class="block"><i class="fa-brands fa-free-code-camp"></i> Projets pour certification Front End Libraries sur freeCodeCamp 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/responsive-web-design' class='highlight-link transition-all'>Responsive Web Design</a> (HTML | CSS)</p> 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/javascript-algorithms-and-data-structures-v8' class='highlight-link transition-all'>JavaScript Algorithms and Data Structures</a></p> 
-            <p><a href='https://www.freecodecamp.org/certification/PaulineBriaud/front-end-development-libraries' class='highlight-link transition-all'>Front End Development Libraries</a> (React.js)</p></div>
-  
-       
-  </section> 
-       <h3 class="label reveal-pro">Expériences professionnelles</h3> 
-    <section class="map-container" id="pro-section">
-    <div class="entry" onclick="toggleInfoBubble(this)" id="entry5">
-          <div class="icon"></div>
-        <div class="label-entry map" >Développeur ERP</div>
-            <div class="info-bubble"> 
-            <span class="subtitle"> Digital Virgo | Paiement mobile | 01/2025 - 05/2025</span>
-            <p># Développement Workday Finance : création de reports avancés, création ou amélioration et sécurisation des intégrations (Web Services)</p> 
-            <p># Recette du référentiel tiers (pour déploiement de nouvelles intégrations)</p> 
-            <p># Support aux utilisateurs sur Workday et Pagero (dématérialisation)</p>
-     </div>  
+<section class="cv-section" id="hard-skills">
+      <h3 class="section-title">Compétences</h3> 
+      <div class="section-wrapper">
+      <div class="description">
+      <h4>Langages de programmation :</h4>
+      <p>Front-End</p>
+      <p>Back-End (en cours d'apprentissage)</p>
+      <p>Data : Python et ses librairies (Pandas, Scikit-learn)</p>
+      <h4>Autres outils :</h4>
+      <p>Notions en Bash, Docker, Git</p>
+      <h4>Langues :</h4>
+      <p> Anglais technique</p>
+      </div>
+ <div class="cube-wrapper">
+    <div class="skill-cube front">
+      <div class="face-top">
+    <img src="../images/css.svg.png" alt="Logo CSS" />
   </div>
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry6">
-       <div class="icon"></div>
-     <div class="label-entry">Responsable Comptable Analytique</div>
-
-        <div class="info-bubble"><span class='subtitle'>Boccard | Ensemblier industriel | 10/2023 - 01/2025</span>
-        <p># Pilotage du processus reporting sur le périmètre France (VBA, SQL)</p> 
-        <p># Suivi de la structure analytique dans le SI (gestion de projets/IFS)</p> 
-        <p># Amélioration de rapports et suivi des paramétrages de l’EPM (Tagetik)</p></div>
+    <div class="face-right">
+    <img src="../images/js.png" alt="Logo JavaScript" />
   </div>
-  
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry7">
-       <div class="icon"></div>
-    <div class="label-entry">Responsable comptable</div>
-
-        <div class="info-bubble"> 
-            <span class='subtitle'>Boucheries André | Distribution | 01/2022 - 09/2022</span> 
-            <p># Mise en place de fichiers d’automatisation sous Excel (fichiers d'import Sage 100c, de réconciliation, etc.) pour digitaliser le service comptable</p> 
-            <p># Participation à la mise en place de Zeendoc (dématérialisation)</p>
-    </div>
-  </div>
-
-  <div class="entry" onclick="toggleInfoBubble(this)" id="entry8">
-       <div class="icon"></div>
-    <div class="label-entry"><u>Expériences précédentes cumulées</u> :<br> Contrôle financier & Comptabilité générale<br></div>
-    
-      <div class="info-bubble">
-            <span class='subtitle'>Smurfit Kappa | Eurofins | Hendrix Genetics | Metronic | 05/2011 - 12/2021</span>
-           <p># Projet ERP Lawson M3 module Finance : Key User lors de l'implémentation (paramétrage, tests et vérifications)</p>
-        </div>
-  </div>
-</section> 
-    <h3 id="hard-skills" class="label reveal-hard" onclick="showAllHardSkills()">Compétences</h3> 
-   <section class="hard-skills-container"> 
-    <div class="block hard">
-  <div class="hard-title " onclick="toggleSkillBubble(this)">
-    <img class="hard-icon" src="images/app.png" alt="langage">
-    <h4>Langages de programmation</h4>
-  </div>
-  <div class="hard-content transition-all">
-    <p>Front-end : HTML | CSS | JavaScript</p>
-    <p>Back-end (en cours d'apprentissage) : PHP | Java </p>
-    <p>Data : Python - Pandas, Scikit-learn, Streamlit, etc.</p>
+  <div class="face-left">
+    <img src="../images/html.png" alt="Logo HTML" />
   </div>
 </div>
-     <div class="block hard"> 
-       <div class="hard-title" onclick="toggleSkillBubble(this)"><img class="hard-icon" src="images/bag.png" alt="other"><h4>Autres outils</h4></div>
-       <div class="hard-content transition-all">
-       <p> mySQL, bases de la stack MERN</p> 
-       <p> Autres notions en Bash, Docker, Git</p> </div> 
-</div> 
-     <div class="block hard">
-       <div class="hard-title" onclick="toggleSkillBubble(this)"><img class="hard-icon" src="images/pole.png" alt="langue"> 
-       <h4>Langues</h4> </div> 
-         <div class="hard-content transition-all">
-               <p>Anglais technique</p> </div> 
-        </div> 
-  </section>  
-    <h3 id="soft-skills" class="label reveal-soft" onclick="showAllSoftSkills()">Soft Skills</h3> 
-    <section class="soft-skills-container">
-  <div class="badge transition-all" onclick="toggleSkillBubble(this)">
-    <img class="badge-icon" src="images/16952.jpg" alt="Rigueur">
+ <div class="skill-cube back">
+  <div class="face-top">
+    <img src="../images/java.png" alt="Logo Java" />
+  </div>
+    <div class="face-right">
+    <img src="../images/php.png" alt="Logo PHP" />
+  </div>
+  <div class="face-left">
+    <img src="../images/mysql.png" alt="Logo MySQL" />
+  </div>
+</div>
+</div>
+</div>
+</section>  
+
+  <section class="cv-section" id="pro-section">
+     <h3 class="section-title reveal-exp" onclick="toggleAllInfoBubbles()">Expériences professionnelles</h3> 
+  <div class="entry-group">
+  <div class="entry"  onclick="toggleInfoBubble(this)">
+        <div class="entry-header" >Développeur ERP</div>
+       <div class="entry-details"> 
+         <span class="tag">Digital Virgo</span><span class="tag">Paiement mobile</span><span class="date">01/2025 - 05/2025</span>  
+        <p>Développement Workday Finance : création de reports avancés, création ou amélioration et sécurisation des intégrations (Web Services)</p> 
+        <p>Recette du référentiel tiers (pour déploiement de nouvelles intégrations)</p> 
+        <p>Support aux utilisateurs sur Workday et Pagero (dématérialisation)</p></div>
+       </div>
+  <div class="entry"  onclick="toggleInfoBubble(this)">
+    <div class="entry-header">Responsable Comptable Analytique</div>
+      <div class="entry-details"> 
+        <span class="tag">Boccard</span><span class="tag">Ensemblier industriel</span><span class="date">10/2023 - 01/2025</span>
+        <p>Pilotage du processus reporting sur le périmètre France (VBA, SQL)</p> 
+        <p>Suivi de la structure analytique dans le SI (gestion de projets/IFS)</p> 
+        <p>Amélioration de rapports et suivi des paramétrages de l’EPM (Tagetik)</p></div>
+      </div>
+<div class="entry"  onclick="toggleInfoBubble(this)">
+        <div class="entry-header">Responsable comptable</div>
+           <div class="entry-details"> 
+            <span class="tag">Boucheries André</span><span class="tag">Distribution</span><span class="date">01/2022 - 09/2022</span>    
+            <p>Mise en place de fichiers d’automatisation sous Excel (fichiers d'import Sage 100c, de réconciliation, etc.) pour digitaliser le service comptable</p> 
+            <p>Participation à la mise en place de Zeendoc (dématérialisation)</p></div>
+  </div>
+<div class="entry"  onclick="toggleInfoBubble(this)">
+    <div class="entry-header">Expériences précédentes cumulées</div>
+        <div class="entry-details"> 
+        <span class="tag">Contrôle financier & Comptabilité générale</span><span class="tag">Smurfit Kappa | Eurofins | Hendrix Genetics | Metronic</span><span class="date">05/2011 - 12/2021</span>   
+        <p>Projet ERP Lawson M3 module Finance : Key User lors de l'implémentation (paramétrage, tests et vérifications)</p> 
+  </div></div></div> 
+</section>  
+
+ 
+<section class="cv-section" id="soft-skills">
+<h3 class="section-title reveal-soft" onclick="toggleAllSoftInfoBubbles()">Soft skills</h3> 
+ <div class="softskills-group">
+  <div class="hexagon-wrapper">
+  <div class="softskill-badge"   onclick="toggleSoftInfoBubble(this)">
     <div class="badge-title">Rigueur</div>
     <div class="soft-info-bubble">Respect des deadlines et procédures internes</div>
-  </div>
-    <div class="badge transition-all" onclick="toggleSkillBubble(this)">
-    <img class="badge-icon" src="images/19198840.jpg" alt="Initiative">
-    <div class="badge-title">Esprit d'initiative</div>
-    <div class="soft-info-bubble">Amélioration et automatisation de process</div>
-  </div>
-    <div class="badge transition-all" onclick="toggleSkillBubble(this)">
-    <img class="badge-icon" src="images/apprentissage.png" alt="Apprentissage">
-    <div class="badge-title">Apprentissage</div>
+      </div>
+      </div>
+   <div class="hexagon-wrapper">
+  <div class="softskill-badge"   onclick="toggleSoftInfoBubble(this)">
+        <div class="badge-title">Esprit d'initiative</div>
+       <div class="soft-info-bubble">Amélioration et automatisation de process</div>
+      </div>
+      </div>
+   <div class="hexagon-wrapper">
+  <div class="softskill-badge"   onclick="toggleSoftInfoBubble(this)">
+      <div class="badge-title">Apprentissage</div>
     <div class="soft-info-bubble">Certifications en JavaScript et Python</div>
-  </div>
-    <div class="badge transition-all" onclick="toggleSkillBubble(this)">
-    <img class="badge-icon" src="images/4188513.jpg" alt="Esprit d'équipe">
+      </div>
+      </div>
+ <div class="hexagon-wrapper">
+  <div class="softskill-badge"   onclick="toggleSoftInfoBubble(this)">
     <div class="badge-title">Esprit d'équipe</div>
     <div class="soft-info-bubble">Collaboration avec des équipes transverses</div>
-  </div>
-</section>
-     <h3 id="other" class="label">Autres diplômes</h3> 
-  <section class="other-container"> 
-    <div class="block other-block"> 
-         <img class="other-icon" src="images/Parc_naturel_régional_de_la_Chartreuse.png" alt=""><h4>BTS Comptabilité Gestion | 2014</h4></div>
+      </div>
+      </div>
+      </div>
+</section>  
+  
+  <section class="cv-section" id="other-container"> 
+       <h3 class="section-title">Autres diplômes</h3> 
+       <div class="other-block-group"></div>
       <div class="block other-block"> 
-        <img class="other-icon" src="images/Parc_naturel_régional_du_Vercors.svg" alt=""><h4>Titre comptable-assistant | 2010</h4></div> 
+       <h4>BTS Comptabilité Gestion | 2014</h4></div>
+      <div class="block other-block"> 
+      <h4>Titre comptable-assistant | 2010</h4></div> 
      <div class="block other-block">
-        <img class="other-icon" src="images/Parc_naturel_régional_du_Queyras.svg" alt=""><h4>Licence en sociologie | 2004</h4></div> 
-  </section> 
+  <h4>Licence en sociologie | 2004</h4></div> </div>
+  </section>
+  </main>
 
-    </main> 
+  <footer class="footer">
+    <div id="footer-design">Design by Pauline Briaud</div>   
+    <div># Centres d'intérêts</div>
+    <div class="footer-section-group">
  
-  </div> 
+    <div class="footer-section">
+      <div class="footer-text-block">
+      <p>Randonnée (pratique régulière en montagne)</p>
+      <p>Mon blog</p>
+    </div>
+      <img src="images/rando.png" alt="Randonnée" class="footer-img">
+    </div>
+    <div class="footer-section">
+      <div class="footer-text-block">
+      <p>Musique (styles éclectiques)</p>
+      <p>Ma chanson du moment</p>    
+    </div>
+      <a href="https://open.spotify.com/intl-fr/track/5uDkmw3zDTvAnsvi8SgR7T" target="_blank">
+        <img src="images/album.jpg" alt="Pochette d'album" class="footer-img">
+      </a>
+    </div>
+    <div class="footer-section">
+         <div class="footer-text-block">
+      <p>Cinéma (art et essai)</p>
+      <p>Un film à voir</p>
+    </div>
+      <a href="https://www.youtube.com/watch?v=oJ_n9EktPKs" target="_blank">
+        <img src="images/film.jpg" alt="Junk Head" class="footer-img">
+      </a>
+    </div></div></div>
+  </footer>
+
   <script src="script.js"></script>
-</body> 
-</html> 
+</body>
+</html>
