@@ -346,6 +346,9 @@ a {
   color: var(--clr-light);
   padding: 20px;
 }
+#footer-design {
+  font-style: italic;
+}
 .footer-section-group {
   display: flex;
   align-items: center;
