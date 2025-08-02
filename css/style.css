@@ -180,6 +180,10 @@ a {
   align-items: center;
   cursor: pointer;
 }
+.entry-header:hover {
+  transform: scale(1.05);
+  color: var(--clr-primary);
+}
 .entry-details {
   display: none;
   flex-direction: column;
@@ -228,6 +232,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.hexagon-wrapper:hover {
+  transform: scale(1.05);
+}
 .softskill-badge {
   width: 155px;
   height: 150px;
@@ -241,7 +248,10 @@ a {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-}
+  }
+
+
+
 .badge-title, .soft-info-bubble {
   position: absolute;
   width: 100%;
