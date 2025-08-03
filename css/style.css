@@ -96,7 +96,7 @@ a {
 
 .reveal-pro,
 .reveal-soft,
-.reveal-exp {
+.reveal-learning {
     cursor: pointer;
     display: inline-block;
 }
@@ -396,23 +396,30 @@ a {
   .main-content {
     padding: 20px 30px;
   }
+
+  .intro-text{
+    text-align: justify;
+  }
   .cv-section {
     width: 100%;
     padding: 20px;
   }
-  .entry-group, .softskills-group, .cube-wrapper {
+  .entry-group {
     flex-direction: column;
     margin-left: 0;
     gap: var(--gap-card);
+    justify-content: center;
   }
   .section-wrapper{
     display: flex;
     flex-direction: column;
+     justify-content: center;
   }
   .cube-wrapper {
     margin-top: 35px;
     margin-left: 50px;
     gap:75px;
+    justify-content: center;
   }
   .profile-photo-container {
     display:none;
@@ -426,7 +433,7 @@ a {
     height: auto;
     padding: 20px;
   }
-  .footer-section-group {
+  .footer-section-group, #footer-section-title {
     display: none;
   }
   #footer-design {

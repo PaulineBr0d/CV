@@ -1,5 +1,13 @@
 /* ================= BULLES D'INFO ================= */
+document.addEventListener('click', function (e) {
+  const isInsideEntry = e.target.closest('.cv-entry');
+  const isRevealPro = e.target.closest('.reveal-pro');
+  const isRevealLearning = e.target.closest('.reveal-learning');
 
+  if (!isInsideEntry && !isRevealPro && !isRevealLearning) {
+    document.querySelectorAll('.entry-details').forEach(b => b.style.display = 'none');
+  }
+});
 function toggleInfoBubble(clickedElement) {
   const detail = document.querySelectorAll('.entry-details');
   detail.forEach(b => b.style.display = 'none');
