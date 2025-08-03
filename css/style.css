@@ -419,7 +419,7 @@ a {
   .cube-wrapper {
     flex-wrap: wrap;
     margin-top: 35px;
-    margin-left: 5px;
+    margin-left: 10px;
     gap:75px;
     justify-content: center;
   }
