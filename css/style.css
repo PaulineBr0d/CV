@@ -124,9 +124,9 @@ a {
   font-weight: 500;
   margin-bottom: 12px;
 }
-.section-title::before {
+/*.section-title::before {
     content: "📚 ";
-}
+}*/
 .sub-section-title{
   display: inline-block;
   padding: 20px;
