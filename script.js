@@ -1,33 +1,38 @@
 /* ================= BULLES D'INFO ================= */
 document.addEventListener('click', function (e) {
-  const isInsideEntry = e.target.closest('.cv-entry');
-  const isRevealPro = e.target.closest('.reveal-pro');
-  const isRevealLearning = e.target.closest('.reveal-learning');
-
-  if (!isInsideEntry && !isRevealPro && !isRevealLearning) {
+  const isInside = e.target.closest('.reveal-pro, .reveal-learning, .cv-entry');
+  if (!isInside) {
     document.querySelectorAll('.entry-details').forEach(b => b.style.display = 'none');
   }
 });
-function toggleInfoBubble(clickedElement) {
-  const detail = document.querySelectorAll('.entry-details');
-  detail.forEach(b => b.style.display = 'none');
- 
+
+function toggleInfoBubble(clickedElement, type) {
   const bubble = clickedElement.querySelector('.entry-details');
-  bubble.style.display = 'flex';
-  
-}
+  if (!bubble) return;
 
-function toggleAllInfoBubbles() {
-  const bubbles = document.querySelectorAll('.entry-details');
-  const allVisible = Array.from(bubbles).every(b => b.style.display === 'flex');
+  const isVisible = bubble.style.display === 'flex';
 
-  if (allVisible) {
-    bubbles.forEach(b => b.style.display = 'none');
-  } else {
-    bubbles.forEach(b => b.style.display = 'flex');
+  document.querySelectorAll('.entry-details').forEach(b => {
+    const parent = b.closest('.reveal-pro, .reveal-learning, .cv-entry');
+    const isSameType = type === 'pro'
+      ? parent.closest('.cv-section')?.id === 'pro-section'
+      : parent.closest('.cv-section')?.id === 'learning-section';
+
+    if (isSameType) b.style.display = 'none';
+  });
+
+  if (!isVisible) {
+    bubble.style.display = 'flex';
   }
 }
 
+function toggleAllInfoBubbles(type) {
+  const sectionId = type === 'pro' ? '#pro-section' : '#learning-section';
+  const bubbles = document.querySelectorAll(`${sectionId} .entry-details`);
+  const allVisible = Array.from(bubbles).every(b => b.style.display === 'flex');
+
+  bubbles.forEach(b => b.style.display = allVisible ? 'none' : 'flex');
+}
 
 document.addEventListener('click', function (e) {
   const isInsideBadge = e.target.closest('.softskill-badge');
