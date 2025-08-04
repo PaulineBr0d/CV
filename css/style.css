@@ -178,8 +178,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   cursor: pointer;
-  justify-content: center;
 }
 .entry-header:hover {
   transform: scale(1.05);
@@ -418,8 +418,7 @@ a {
   }
   .cube-wrapper {
     flex-wrap: wrap;
-    margin-top: 35px;
-    margin-left: 10px;
+    margin: 35px 15px;
     gap:75px;
     justify-content: center;
   }
@@ -451,6 +450,6 @@ a {
     background: black;
   }
   .cv-section{
-  background: #dadada;
+  background: #bdbdbd;
   }
 }
