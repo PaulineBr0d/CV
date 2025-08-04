@@ -425,6 +425,17 @@ a {
   .softskills-group{
     justify-content: center;
   }
+  .hexagon-wrapper {
+  width: 128px;
+  height: 123px;
+  }
+  .softskill-badge {
+  width: 120px;
+  height: 115px;
+  }
+  .badge-title, .soft-info-bubble {
+    font-size: 12px;
+  }
   .profile-photo-container {
     /*display:none;*/
     width: 50px;
